@@ -55,7 +55,7 @@ app.delete('/patterns/:id', function (req, res) {
         where: {id: parseInt(req.params.id)}
     }).then(function(data) {
         res.json(data);
-    })
+    });
 });
 
 app.listen(3000, function () {
